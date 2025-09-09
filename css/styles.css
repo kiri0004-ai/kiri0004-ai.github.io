@@ -1,5 +1,11 @@
-table,
-th,
-td {
-    border: 1px solid 1px; (54, 189, 90, 0.041);
+table, th, td {
+  border: 0.5px solid;
+}
+ul {
+  list-style-type: none;
+  margin: 1;
+  padding: 0.1;
+}
+body {
+  background-image: url('path-to-your-image.jpg');
 }
