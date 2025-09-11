@@ -1,11 +1,314 @@
-table, th, td {
-  border: 0.5px solid;
-}
-ul {
-  list-style-type: none;
-  margin: 1;
-  padding: 0.1;
-}
+
+/* backround color change */
 body {
-  background-image: url('path-to-your-image.jpg');
+  background-color: #b7afa9;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
+
+/* Dashboard table styling */
+table {
+  font-family: arial, sans-serif;
+  /* Uses Arial or sans-serif font i didn't know what font so I found this one*/
+
+  border-collapse: collapse;
+  width: 100%;
+}
+
+aside {
+  box-sizing: border-box;
+  width: 30vh;
+  padding: 10px;
+  background-color: #42b810;
+}
+.aside a {
+  display:block;
+  color: white;
+  padding: 14px 16px;
+}
+
+td,
+/* Styles both table cells and header cells */
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  /* Targets every even row sating from the 2nd */
+  background-color: #dddddd;
+  /* Sets light gray background for even rows */
+}
+
+/* General styling for the navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+}
+
+/* Links inside the navigation bar */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Active/current link */
+.navbar a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+ul {
+  list-style-type: nav;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+ul li a {
+  display: block;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color: #111111;
+}
+
+ul li a.active {
+  background-color: #99ac07;
+}
+
+/* How tf to style the header */
+header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+/* what in the style in the footer */
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: #333;
+  color: white;
+  margin-top: auto;
+  bottom: 0%;
+  width: 100%;
+}
+
+.mount,
+.text {
+  display: inline-block;
+  vertical-align: top;
+  /* Aligns elements onn the top */
+}
+
+.mount img {
+  width: 150px;
+  /* trying to adjust the size of the image */
+  height: auto;
+}
+
+.text {
+  margin-left: 10px;
+  /* can this change the space between the image and paragraph */
+}
+
+/* Navigation styling */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #333333;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+ul li a {
+  display: block;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+ul li a.active {
+  background-color: #42b810;
+}
+
+/* Image and text side by side */
+.content-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+/* Wanted to a the gap and margin of the mountain pic as needed */
+.mount {
+  width: 400px;
+  height: auto;
+  border-radius: 9px;
+}
+
+
+
+/* Image and text side by side v2 */
+.colourful-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+/* Wanted to do the same but for the tree pic*/
+.tree {
+  width: 400px;
+  height: auto;
+  border-radius: 9px;
+}
+/* Additional styling */
+h1 {
+  color: #333;
+}
+
+p {
+  line-height: 1.6;
+}
+
+        .container {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            margin-top: 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #e1e4e8;
+        }
+        
+        h1 {
+            color: #2c3e50;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            color: #7f8c8d;
+            font-size: 1.2rem;
+        }
+        
+        .swot-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
+        .swot-box {
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+        }
+        
+        .strengths {
+            background-color: #e8f5e9;
+            border-top: 5px solid #4caf50;
+        }
+        
+        .weaknesses {
+            background-color: #ffebee;
+            border-top: 5px solid #f44336;
+        }
+        
+        .opportunities {
+            background-color: #e3f2fd;
+            border-top: 5px solid #2196f3;
+        }
+        
+        .threats {
+            background-color: #fff8e1;
+            border-top: 5px solid #ffc107;
+        }
+        
+        .swot-title {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e1e4e8;
+            text-align: center;
+        }
+        
+        .strengths .swot-title {
+            color: #2e7d32;
+        }
+        
+        .weaknesses .swot-title {
+            color: #c62828;
+        }
+        
+        .opportunities .swot-title {
+            color: #1565c0;
+        }
+        
+        .threats .swot-title {
+            color: #f57f17;
+        }
+                ul {
+            list-style-type: none;
+        }
+        
+        li {
+            padding: 8px 0;
+            position: relative;
+            padding-left: 25px;
+        }
+        
+        li:before {
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+            font-size: 1.2rem;
+            color: #4caf50;
+        }
+        
+        .weaknesses li:before {
+            color: #f44336;
+        }
+        
+        .opportunities li:before {
+            color: #2196f3;
+        }
+        
+        .threats li:before {
+            color: #ffc107;
+        }
+        
+        .intro-text {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 1.1rem;
+            color: #555;
+            line-height: 1.8;
+            max-width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+        }
