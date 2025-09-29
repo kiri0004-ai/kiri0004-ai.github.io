@@ -1,1 +1,1 @@
-consolelog('Kill me');
+console.log('Put me out my misery!');
