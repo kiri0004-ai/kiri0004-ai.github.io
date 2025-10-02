@@ -14,7 +14,7 @@ table {
   border-collapse: collapse;
   width: 100%;
 }
-
+/* Styling for the attempted aside menu on the blog page */
 aside {
   box-sizing: border-box;
   width: 30vh;
@@ -154,13 +154,7 @@ ul li a.active {
   background-color: #42b810;
 }
 
-/* Image and text side by side */
-.content-container {
-  display: flex;
-  align-items: flex-start;
-  gap: 20px;
-  margin-bottom: 20px;
-}
+
 
 /* Wanted to a the gap and margin of the mountain pic as needed */
 .mount {
@@ -187,6 +181,7 @@ ul li a.active {
 }
 
 /* Additional styling */
+/* heading one colour styling*/
 h1 {
   color: #333;
 }
@@ -219,7 +214,7 @@ h1 {
   color: #7f8c8d;
   font-size: 1.2rem;
 }
-
+/* SWOT grid layout */
 .swot-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -318,3 +313,4 @@ li:before {
   margin-left: auto;
   margin-right: auto;
 }
+/* end of styling for SWOT type of a page  */
